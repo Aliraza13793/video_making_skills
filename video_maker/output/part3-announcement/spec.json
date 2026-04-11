@@ -1,0 +1,135 @@
+{
+  "video": {
+    "title": "AgentFactory Part 3: Business Domain Agent Workflows — Announcement",
+    "type": "announcement",
+    "duration_seconds": 45,
+    "aspect_ratio": "16:9",
+    "secondary_aspect_ratio": "9:16",
+    "fps": 30,
+    "brand": {
+      "name": "AgentFactory",
+      "tagline": "AI-First Future — BUILD & MONETIZE DIGITAL FTEs",
+      "colors": {
+        "primary": "#1C2833",
+        "secondary": "#2E4053",
+        "accent": "#AAB7B8",
+        "background": "#F4F6F6"
+      }
+    },
+    "typography": {
+      "display": "JetBrains Mono",
+      "body": "Inter"
+    },
+    "audio": {
+      "music_bed": {
+        "type": "ambient-tech-pulse",
+        "volume": 0.15,
+        "description": "Subtle bass drone / ambient tech pulse — present but not dominant"
+      },
+      "sfx": [
+        { "type": "keyboard-typing", "scenes": ["hook", "principle", "cta"], "volume": 0.4 },
+        { "type": "transition-whoosh", "scenes": ["shift", "scope-deliverables"], "volume": 0.3 },
+        { "type": "click", "scenes": ["scope-deliverables"], "volume": 0.25, "description": "Checklist checkmark sounds" },
+        { "type": "bass-hit", "scenes": ["hook"], "volume": 0.2, "description": "Subtle hit on hook completion" },
+        { "type": "resolve-chord", "scenes": ["cta"], "volume": 0.15, "description": "Subtle resolve on CTA" }
+      ],
+      "mix_priority": "SFX above music bed; nothing competes with text readability"
+    },
+    "scenes": [
+      {
+        "id": "hook",
+        "type": "hook",
+        "duration_frames": 90,
+        "duration_seconds": 3,
+        "text": "AgentFactory: PART 3_",
+        "secondary_text": "NOW LIVE",
+        "visuals": "Terminal-style typing reveal. 'AgentFactory' types first, then ': PART 3' types with emphasis. Blinking cursor on '3_'. 'NOW LIVE' badge fades in top-right corner (silver accent).",
+        "transition": "spring-scale-in",
+        "bg_color": "#1C2833",
+        "text_color": "#F4F6F6",
+        "secondary_text_color": "#AAB7B8"
+      },
+      {
+        "id": "shift",
+        "type": "problem-solution",
+        "duration_frames": 210,
+        "duration_seconds": 7,
+        "text": "From AI Infrastructure \u2192 Enterprise Deployment",
+        "subtext": "Parts 1 & 2 taught you to build AI. Part 3 teaches you to deploy it in real business functions.",
+        "visuals": "'AI Infrastructure' appears \u2192 arrow animates downward \u2192 'Enterprise Deployment' slides in. Subtitle fades in below after 1s delay.",
+        "transition": "spring-fade-in",
+        "bg_color": "#2E4053",
+        "text_color": "#F4F6F6",
+        "subtext_color": "#AAB7B8"
+      },
+      {
+        "id": "principle",
+        "type": "quote",
+        "duration_frames": 210,
+        "duration_seconds": 7,
+        "text": "\"Domain Expertise is the Scarce Resource\"_",
+        "subtext": "Not technical capability. Professional judgment encoded into AI workflows.",
+        "visuals": "Monospace quote with blinking cursor, silver accent text on dark navy. Subtitle appears 1s after quote (staggered reveal).",
+        "transition": "spring-scale-in",
+        "bg_color": "#1C2833",
+        "text_color": "#AAB7B8",
+        "subtext_color": "#F4F6F6"
+      },
+      {
+        "id": "scope-deliverables",
+        "type": "feature-grid-with-checklist",
+        "duration_frames": 480,
+        "duration_seconds": 16,
+        "text": "16 Chapters | 7 Enterprise Functions",
+        "subtext": "Not prototypes. Deployable agent workflows.",
+        "visuals": "3x2 grid of enterprise function cards (CFO Office, Legal & Compliance, Sales & Marketing, Supply Chain, HR & Operations, Innovation Lab), staggered fade-in at 100ms intervals. After grid establishes (~2s), cards shrink slightly and deliverables checklist slides up from bottom:\n- \u2713 Production-Ready SKILL.md Libraries\n- \u2713 Governance Frameworks (10-80-10 Rhythm)\n- \u2713 MCP Integration\n- \u2713 Multi-Jurisdiction Compliance",
+        "transition": "spring-scale-in",
+        "bg_color": "#2E4053",
+        "text_color": "#F4F6F6",
+        "subtext_color": "#AAB7B8",
+        "checklist_color": "#F4F6F6"
+      },
+      {
+        "id": "cta",
+        "type": "cta",
+        "duration_frames": 360,
+        "duration_seconds": 12,
+        "text": "Start Building_",
+        "subtext": "agentfactory.panaversity.org",
+        "visuals": "Large headline with blinking cursor. Short URL in monospace below. Full path (docs/Business-Domain-Agent-Workflows) lives in video description and post caption — not on screen.",
+        "transition": "spring-scale-in",
+        "bg_color": "#1C2833",
+        "text_color": "#F4F6F6",
+        "subtext_color": "#AAB7B8"
+      }
+    ],
+    "voiceover": {
+      "enabled": false,
+      "script": "",
+      "voice": "",
+      "offset_frames": 0,
+      "rationale": "80%+ of social views are muted. All messaging conveyed through on-screen text."
+    },
+    "captions": {
+      "enabled": false,
+      "rationale": "Not needed — all messaging is on-screen text. Video works with sound off."
+    },
+    "distribution": {
+      "master": { "aspect_ratio": "16:9", "resolution": "1920x1080", "platforms": ["LinkedIn", "YouTube", "Website embed"] },
+      "cutdown": { "aspect_ratio": "9:16", "resolution": "1080x1920", "platforms": ["TikTok", "Instagram Reels", "YouTube Shorts"], "reframe_notes": "Center-align all text. Crop top/bottom of grid scene in scope-deliverables." }
+    },
+    "thumbnail": {
+      "source_scene": "hook",
+      "description": "Frame from Scene 1 — 'AgentFactory: PART 3_' with cursor visible"
+    },
+    "constraints": {
+      "no_linear_motion": true,
+      "spring_physics_only": true,
+      "no_emoji_icons": true,
+      "allowed_checkmark": "\u2713",
+      "no_slideshow_transitions": true,
+      "min_scene_duration_seconds": 3,
+      "text_readability_wpm": 150
+    }
+  }
+}
